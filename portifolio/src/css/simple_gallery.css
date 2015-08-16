@@ -1,0 +1,50 @@
+
+/* *****************************simple gallery *********************************/
+
+#gallery { /* the gallery container */
+    position: relative;
+    width: 755px;
+    z-index: 1;
+    margin: 100px auto;
+    border: 2px solid #15C6A6;
+    height: 675px;
+}
+
+#navigation {
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+}
+.navigation{
+    height: 120px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#navigation li {
+    display: inline;
+
+}
+
+#navigation li a img {
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+
+#full-picture {
+    width: 750px;
+    height: 550px;
+    overflow: hidden;
+  /*  float: right; */
+    border: 2px solid #15C6A6;
+}
+#full-picture span{
+   font-weight: bold;
+    display:inline-block;
+    height: 300px;
+    width: 750px;
+    text-align: center;
+    padding: 5px;
+}

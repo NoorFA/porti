@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/simple_gallery.css">
+</head>
+<body>
+<!--*****************************************************************************
+    This is a simple gallery code done with HTML and CSS only.
+    -It requires that the pictures be already resized to a width of 750px and a
+        height of no larger than 500px.
+    - To show the latest picture at the top, add its tag to the top of the list
+        in the HTML code.
+    - to add a new picture, follow the following steps:
+        1- go to the div with id= full-picture
+        2- add a new div at the top of the existing divs as follows:
+            <div><a name="picture number"></a>
+                <img alt="" src="image location here" />
+                <br />
+                <span>Image caption here</span>
+            </div>
+        3- now to add a thumblnail image, go to the div with id = "navigation"
+        and add a new list item to the top of existing list as follows:
+            <li>
+                <a href="#same picture number from the previous step">
+                    <img alt="" src="image location" />
+                </a>
+            </li>
+******************************************************************************-->
+
+<div id="gallery">
+
+    <div id="full-picture">
+        <div><a name="pic1"></a><img alt="" src="img/micwic/micwic1.jpg" /> <br /><span>The Michigan Celebration of Women in Computing Conference 2015</span></div>
+        <div><a name="pic2"></a><img alt="" src="img/micwic/micwic2.jpg" /><br /><span>The Michigan Celebration of Women in Computing Conference 2015</span></div>
+        <div><a name="pic3"></a><img alt="" src="img/micwic/micwic3.jpg" /><br /><span>The Michigan Celebration of Women in Computing Conference 2015</span></div>
+        <div><a name="pic4"></a><img alt="" src="img/micwic/micwic4.jpg" /><br /><span>The Michigan Celebration of Women in Computing Conference 2015</span></div>
+        <div><a name="pic5"></a><img alt="" src="img/micwic/micwic1.jpg" /><br /><span>The Michigan Celebration of Women in Computing Conference 2015</span></div>
+        <div><a name="pic66"></a><img alt="" src="img/micwic/micwic2.jpg" /><br /><span>The Michigan Celebration of Women in Computing Conference 2015</span></div>
+    </div>
+
+    <div  class="navigation">
+        <ul id="navigation">
+            <li><a href="#pic1"><img alt="" src="img/micwic/micwic1.jpg" /></a></li>
+            <li><a href="#pic2"><img alt="" src="img/micwic/micwic2.jpg" /></a></li>
+            <li><a href="#pic3"><img alt="" src="img/micwic/micwic3.jpg" /></a></li>
+            <li><a href="#pic4"><img alt="" src="img/micwic/micwic4.jpg" /></a></li>
+            <li><a href="#pic5"><img alt="" src="img/micwic/micwic1.jpg" /></a></li>
+            <li><a href="#pic66"><img alt="" src="img/micwic/micwic2.jpg" /></a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
